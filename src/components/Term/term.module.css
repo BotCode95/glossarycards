@@ -1,0 +1,33 @@
+
+.flippyCardContainer {
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.flippyFront,
+.flippyBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 70%;
+    transform: rotateY(0deg);
+    background: transparent;
+    backface-visibility: hidden;
+    transition: all .6s ease-in;
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flippyFront {
+  color: black;  
+  transform: rotateY(0deg);
+}
+
+.flippyBack {
+  color: white;
+  transform: rotateY(360deg);
+  background-color: #4158D0;
+}
